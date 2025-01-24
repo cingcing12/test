@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 10%;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 1.5em;
+    font-weight: 500;
+}
+
+.login-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 15px white;
+    background-color: #eee3;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.login-btn:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 30px white;
+}
+
+.section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-vid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.next-btn{
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: #eee3;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.4;
+    transition: 0.5s;
+    -webkit-user-select: none;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+.next-btn:hover{
+    opacity: 1;
+    box-shadow: 0 0 30px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white
+    ;
+}
+
+.icon{
+    display: none;
+}
+
+.section-info{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+.section-info .title{
+    font-family: "Macondo", serif;
+    font-size: 6em;
+    background-image: linear-gradient(to right, rgba(161, 68, 238, 0.267),  rgba(94, 13, 160, 0.267),  rgba(123, 110, 182, 0.267), rgba(68, 232, 238, 0.267), rgba(238, 68, 147, 0.267), rgba(68, 238, 139, 0.267), rgba(238, 136, 68, 0.267), rgba(142, 68, 238, 0.267), rgba(238, 212, 68, 0.267), rgba(238, 68, 161, 0.267));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationText 2.5s linear infinite;
+}
+
+@keyframes animationText{
+    to{
+        background-position: 200%;
+    }
+}
+
+.section-info .content-p{
+    margin-top: 100px;
+    max-width: 500px;
+    color: gray;
+    filter: drop-shadow(0 0 5px white);
+    letter-spacing: 5px;
+}
+
+
+
+.card-info{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 0 30px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white
+    ;
+}
+
+.card:nth-child(1){
+    grid-column: span 2;
+}
+
+.card:nth-child(2){
+    grid-row: span 2;
+    height: 84vh;
+}
+
+.card:nth-child(5){
+    grid-column: span 2;
+}
+
+.card:nth-child(7){
+    grid-row: span 2;
+    height: 84vh;
+}
+
+.card video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-content{
+    margin: 100px 0;
+}
+
+.container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+body{
+    overflow-x: hidden;
+}
+
+.card .title{
+    font-family: "Macondo", serif;
+    font-size: 6em;
+    background-image: linear-gradient(to right, rgba(161, 68, 238, 0.267),  rgba(94, 13, 160, 0.267),  rgba(123, 110, 182, 0.267), rgba(68, 232, 238, 0.267), rgba(238, 68, 147, 0.267), rgba(68, 238, 139, 0.267), rgba(238, 136, 68, 0.267), rgba(142, 68, 238, 0.267), rgba(238, 212, 68, 0.267), rgba(238, 68, 161, 0.267));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationText 2.5s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+    
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    40%, 60%{
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        filter: blur(40px);
+        opacity: 0;
+        transform: translateY(200px);
+    }
+}
+
+.autoDisplay{
+    animation: autoAnimationDsiplay both;
+    animation-timeline: view(70% 60%);
+}
+
+@keyframes autoAnimationDsiplay{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    
+}
+
+
+.card h1{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    font-family: "Macondo", serif;
+    font-size: 4em;
+    background-image: linear-gradient(to right, rgba(161, 68, 238, 0.267),  rgba(94, 13, 160, 0.267),  rgba(123, 110, 182, 0.267), rgba(68, 232, 238, 0.267), rgba(238, 68, 147, 0.267), rgba(68, 238, 139, 0.267), rgba(238, 136, 68, 0.267), rgba(142, 68, 238, 0.267), rgba(238, 212, 68, 0.267), rgba(238, 68, 161, 0.267));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationText 2.5s linear infinite;
+}
+
+.card p{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    max-width: 250px;
+    letter-spacing: 5px;
+}
+
+.card button{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #eee3;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.card button:hover{
+    box-shadow: 0 0 30px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white
+    ;
+    border: 1px solid white;
+}
+
+
+.container-title{
+    position: absolute;
+    z-index: 12;
+    top: 20%;
+    left: 10%;
+    max-width: 678px;
+    width: 100%;
+}
+
+.container-title h1{
+    font-family: "Macondo", serif;
+    font-size: 6em;
+    background-image: linear-gradient(to right, rgba(161, 68, 238, 0.267),  rgba(94, 13, 160, 0.267),  rgba(123, 110, 182, 0.267), rgba(68, 232, 238, 0.267), rgba(238, 68, 147, 0.267), rgba(68, 238, 139, 0.267), rgba(238, 136, 68, 0.267), rgba(142, 68, 238, 0.267), rgba(238, 212, 68, 0.267), rgba(238, 68, 161, 0.267));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationText 2.5s linear infinite;
+    letter-spacing: 20px;
+}
+
+.container-title p{
+    color: lightgray;
+    line-height: 25px;
+    letter-spacing: 5px;
+    margin: 0 0 20px 0;
+}
+
+.container-title button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #eee3;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.container-title button:hover{
+    box-shadow: 0 0 30px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white
+    ;
+    border: 1px solid white;
+}
+
+@media(max-width:678px){
+
+    .header{
+        padding: 1.5em 5%;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .50);
+        backdrop-filter: blur(20px);
+        display: none;
+    }
+
+    .nav.active{
+        display:block;
+    }
+
+    .nav a{
+        display: block;
+        text-align: center;
+        margin: 100px 0 -50px 0;
+    }
+
+    .icon{
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background-color: #eee3;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 0 15px white;
+        cursor: pointer;
+    }
+
+    .icon span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:20px;
+        height: 0.5px;
+        background-color: white;
+        z-index: 11;
+    }
+
+    .icon span:nth-child(1){
+        top: 25%;
+    }
+    .icon span:nth-child(2){
+        top: 75%;
+    }
+
+    .icon.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .icon.active span:nth-child(2){
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .login-box{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card:nth-child(1){
+        grid-column: auto;
+    }
+    .card:nth-child(2){
+        grid-row: auto;
+    }
+
+    .card:nth-child(5){
+        grid-column: auto;
+    }
+    .card:nth-child(7){
+        grid-row: auto;
+    }
+
+    .container-title h1{
+        font-size: 4em;
+    }
+    .container-title{
+        left: 0;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:768px){
+    .section-info .title{
+        font-size: 2.5em;
+    }
+}
+
+@media(max-width:400px){
+    .container-title h1{
+        font-size: 2em;
+    }
+    .container-title p{
+        font-size: 0.8em;
+        letter-spacing: 0;
+    }
+
+    .next-btn{
+        width: 70px;
+        height: 70px;
+    }
+}
